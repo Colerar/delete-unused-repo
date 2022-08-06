@@ -164,7 +164,7 @@ async fn main() {
   let result = dialoguer::MultiSelect::new()
     .with_prompt(
       "These repos will be deleted, \n\
-      [Space] to checking item, \n\
+      [Space] to check item, \n\
       [Esc/q] to cancel, \n\
       [Enter] to confirm",
     )
@@ -220,10 +220,6 @@ async fn main() {
   while let Some(handle) = rx.recv().await {
     handle.await.unwrap();
   }
-  p1.finish_with_message(format!(
-    "{} {} Delete repos",
-    style("[4/4]").bold().dim(),
-    TRASH,
-  ));
+  info!("{} {} Delete repos", style("[4/4]").bold().dim(), TRASH);
   info!("{} Done in {}", SPARKLE, HumanDuration(started.elapsed()));
 }
