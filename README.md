@@ -10,7 +10,7 @@ https://user-images.githubusercontent.com/62297254/183237785-67b48b5d-598d-489f-
 ## Usage
 
 > **Warning**
-> You are responsible for your own actions, this is free software with ABSOLUTELY NO WARRANTY..
+> You are responsible for your own actions, this is free software with ABSOLUTELY NO WARRANTY.
 
 1. [Generates a GitHub token](https://github.com/settings/tokens/new), `repo` and `delete repo` permission are required.
 2. Run `delete-unused-repo -t [Token]`.
